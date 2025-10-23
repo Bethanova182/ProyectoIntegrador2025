@@ -275,134 +275,92 @@ static void listarJugadoresConVinietas(Club club)
 	
 }
 //submenu2
-static List<Equipo> listarEquiposEnCompetencia(Club club)
+static void listarEquiposEnCompetencia(Club club)
 {
 	ArrayList todosLosEquipos = club.listarEquipos();
 	
-	List<Equipo> equiposEnCamp = new List<Equipo>();
-	
-	//reviso si esta vacio:
-	if(todosLosEquipos.Count == 0.0){
+		//reviso si esta vacio:
+	if(todosLosEquipos.Count == 0){
 		Console.WriteLine("**La lista esta vacia**");
-		return equiposEnCamp;
+		return;
 	}
 	foreach( object item in todosLosEquipos )
 	{
 		Equipo equipo = (Equipo)item;
 		//reviso por cada equipo el estado de campaña
 		if(equipo.EstadoDeCampania>0){
-			equiposEnCamp.Add(equipo);
-		}
-	}
-	if(equiposEnCamp.Count == 0){
-		Console.WriteLine("**No se encuentran Equipos en competencia**");
-	}else{
-		foreach(Equipo equipo in equiposEnCamp){
-			
-			Console.WriteLine("º_");
+			Console.WriteLine("º. ");
 			equipo.imprimir();
+			Console.WriteLine("------------------------");
+			
 		}
 	}
-	
-	
-	return equiposEnCamp;
 	
 }
 //submenu3
-static List<Equipo> listarEquiposConCampaniaFin(Club club)
+static void listarEquiposConCampaniaFin(Club club)
 {
 	ArrayList todosLosEquipos = club.listarEquipos();
-	
-	List<Equipo> equiposConCampFin = new List<Equipo>();
-	
+		
 	//reviso si esta vacio:
 	if(todosLosEquipos.Count == 0){
 		Console.WriteLine("**La lista esta vacia**");
-		return equiposConCampFin;
+		return;
 	}
 	foreach( object item in todosLosEquipos )
 	{
 		Equipo equipo = (Equipo)item;
 		//reviso por cada equipo el estado de campaña
 		if(equipo.EstadoDeCampania== 0.0){
-			equiposConCampFin.Add(equipo);
-		}
-	}
-	if(equiposConCampFin.Count> 0){
-		foreach(Equipo equipo in equiposConCampFin){
-			
-			Console.WriteLine("º_");
+			Console.WriteLine("º. ");
 			equipo.imprimir();
+			Console.WriteLine("------------------------");
 		}
-	}else{
-		Console.WriteLine("**No se encontraron Equipos con la Campaña Finalizada.**");
 	}
 	
-	
-	return equiposConCampFin;
 }
 
 //submenu4
-static List<Equipo> listarEquiposTipoCopa(Club club){
+static void listarEquiposTipoCopa(Club club){
 	ArrayList todosLosEquipos = club.listarEquipos();
 	
-	List<Equipo> equipoTipoCopa = new List<Equipo>();
 	
 	if(todosLosEquipos.Count == 0){
 		Console.WriteLine("**La lista esta vacia**");
-		return equipoTipoCopa;
+		return;
 		}
 	foreach( object item in todosLosEquipos){
 		Equipo equipo = (Equipo)item;
 		
 		if(equipo.TipoCompetencia.ToLower() == "copa"){
-			equipoTipoCopa.Add(equipo);
-			Console.WriteLine("SI");
-		}}
-	if(equipoTipoCopa.Count == 0){
-		Console.WriteLine("**No se encuentran equipos en competencioa tipo Copa**");
-	}else{
-		foreach(Equipo equipo in equipoTipoCopa){
-			Console.WriteLine("º_");
+			Console.WriteLine("º. ");
 			equipo.imprimir();
+			Console.WriteLine("------------------------");
 		}
-		}
-		
+	}
 	
-	return equipoTipoCopa;
 }
 		
 //submenu5
-static List<Capitan> listarCapitanes(Club club)
+static void listarCapitanes(Club club)
 {
 	ArrayList  todosLosJugadores = club.listarJugadores();
 	
-	List<Capitan> listaCapitanes = new List<Capitan>();
-	
 	if(todosLosJugadores.Count  == 0){
 		Console.WriteLine("La lista de Capitanes esta vacia");
-		return listaCapitanes;
+		return;
 		
 	}
 	foreach(object item in todosLosJugadores){
 		if(item is Capitan){
 			
 			Capitan capitan = (Capitan)item;
-			listaCapitanes.Add(capitan);
-		}
-	}
-	if(listaCapitanes.Count==0){
-		Console.WriteLine("La lista esta vacia");
-		
-	}else{
-		foreach(Capitan capitan in listaCapitanes){
+			Console.WriteLine("º. ");
 			capitan.imprimirCapitan();
+			Console.WriteLine("------------------------");
 		}
-			
 	}
-		
 	
-	return listaCapitanes;
 }	
 			
 		
