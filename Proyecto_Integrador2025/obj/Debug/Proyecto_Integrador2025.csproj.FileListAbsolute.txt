@@ -1,0 +1,6 @@
+C:\Users\Usuario\Documents\SharpDevelop Projects\Proyecto_Integrador2025\Proyecto_Integrador2025\obj\Debug\Proyecto_Integrador2025.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Documents\SharpDevelop Projects\Proyecto_Integrador2025\Proyecto_Integrador2025\bin\Debug\Proyecto_Integrador2025.exe.config
+C:\Users\Usuario\Documents\SharpDevelop Projects\Proyecto_Integrador2025\Proyecto_Integrador2025\bin\Debug\Proyecto_Integrador2025.exe
+C:\Users\Usuario\Documents\SharpDevelop Projects\Proyecto_Integrador2025\Proyecto_Integrador2025\bin\Debug\Proyecto_Integrador2025.pdb
+C:\Users\Usuario\Documents\SharpDevelop Projects\Proyecto_Integrador2025\Proyecto_Integrador2025\obj\Debug\Proyecto_Integrador2025.exe
+C:\Users\Usuario\Documents\SharpDevelop Projects\Proyecto_Integrador2025\Proyecto_Integrador2025\obj\Debug\Proyecto_Integrador2025.pdb
