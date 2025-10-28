@@ -17,17 +17,18 @@ namespace Proyecto_Integrador2025
 	public class Equipo
 	{
 		 private string nombre, categoria, tipoCompetencia;
-		 private  int codInterno = 0;
+		 private static int nextCodInterno = 1;
+		 private int codInterno;
 		 private double estadoDeCampania, presupuesto;
 		 private DirectorTecnico dt;    	 
     	 private Grupo grupoEntrenamiento;
     	 
-		public Equipo(string nombre, string categoria, int codInterno, string tipoCompetencia, double estadoDeCampania, DirectorTecnico dt, double presupuesto, Grupo nuevoGrupo)
+		public Equipo(string nombre, string categoria, string tipoCompetencia, double estadoDeCampania, DirectorTecnico dt, double presupuesto, Grupo nuevoGrupo)
 		{
 			this.nombre = nombre;
 			this.categoria = categoria;
-			this.codInterno = codInterno;
-			codInterno++;
+			this.codInterno = nextCodInterno;
+			nextCodInterno++;
 			this.tipoCompetencia = tipoCompetencia;
 			this.estadoDeCampania = estadoDeCampania;
 			this.dt = dt;

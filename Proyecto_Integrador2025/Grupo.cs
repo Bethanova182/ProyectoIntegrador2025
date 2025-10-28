@@ -20,7 +20,7 @@ namespace Proyecto_Integrador2025
 		private int id;
 		private int codEquipo;	
 		private ArrayList grupoIntegrantes = new ArrayList();
-		
+	
 		public Grupo( int codEquipo)
 		{
 			cantGrupos++;
