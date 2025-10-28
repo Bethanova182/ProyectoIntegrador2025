@@ -1,4 +1,6 @@
-﻿
+﻿/*
+ * Integrantes:
+* Yanina Elizabeth Encina Franco */
 using System;
 using System.Collections;
 using System.Collections.Generic;
